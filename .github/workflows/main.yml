@@ -21,14 +21,16 @@ jobs:
         - name: run tests
           run: npm run test
           
+    merging:
+      runs-on: ubuntu-latest
+      steps:              
         - name: merge a branch
           run: 
-            git switch main
-            git merge add-feature
-            git add *
-            git commit -m "merging add-feature into main branch.."
-            git push
-
+                git switch main
+                git merge add-feature
+                git add *
+                git commit -m "merging add-feature into main branch.."
+                 git push
 
 
 
