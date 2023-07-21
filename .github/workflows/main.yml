@@ -10,10 +10,14 @@ jobs:
       steps: 
         - name: run checkout
           uses: actions/checkout@v2
-          
+
         - name: say hello
           run: echo "hello world"
           shell: bash
+
+        - name: installing dependencies
+          run: npm install
+          
 
 
 
