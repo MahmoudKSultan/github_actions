@@ -3,4 +3,8 @@ function getAvg(...arr) {
 	return avg;
 }
 
- module.exports = getAvg;
+function getSum(...arr) {
+	return arr.reduce((a, b) => a + b); 
+}
+
+ module.exports = {getAvg, getSum};
