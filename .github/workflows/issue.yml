@@ -11,3 +11,4 @@ jobs:
     steps:
         - name: github context
           run: echo '${{ toJSON(github.event) }}' | jq
+          shell: bash
