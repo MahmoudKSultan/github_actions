@@ -1,0 +1,13 @@
+name: 
+    Create a comment on a newly created Issues 
+
+on: 
+   issues: 
+    types: [opened]
+    
+jobs:
+   making_a_comment:
+    runs-on: ubuntu-latest
+    steps:
+        - name: github context
+          run: echo '${{ toJSON(github.event) }}' | jq
